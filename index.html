@@ -1,1 +1,46 @@
+<!Doctype html>
+<style>
+  
+  
+  	body {
+    color: white;
+  }
+  	
+   body {
+    background-image: url("http://xahlee.info/SpecialPlaneCurves_dir/ArchimedeanSpiral_dir/archimedean_spirals.png");
 
+}
+
+button{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+       
+  
+
+
+  
+  
+</style>
+<head>
+  <title>Beer Bay</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+  <button>Click For Free Beer</button>
+  <script>
+   $(function(){
+    $("button").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*200)+"px",
+                top:(Math.random()*200)+"px",
+            });
+        }
+    });
+}); 
+  </script>
+</body>
+</html>
